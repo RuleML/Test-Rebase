@@ -60,11 +60,11 @@ using rebase to squash your many commits into a single commit
     
 9. Push your commits to your remote fork
 
-    $ git push origin/master
+    $ git push origin
     
 10. Submit a pull request to RuleML/Test-Rebase
 
-    $ git request-pull ruleml/master
+    $ git request-pull origin/master git://github.com/RuleML/Test-Rebase.git
                  
 References
 ----------
