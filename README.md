@@ -44,13 +44,14 @@ test, repeat, ...
 6. When you are satisfied with your fix, "merge" back into your master branch
 using rebase to squash your many commits into a single commit
 
-    $ git rebase -i Issue#45
+    $ git rebase -i master
     
     $ git checkout master
     
     $ git merge Issue#45
 
-7. Update your repository's master branch from the ruleml repo
+7. Update your repository's ruleml/master branch from the ruleml repo and move the ruleml/master
+pointer to the tip of that branch
 
     $ git fetch ruleml
     
