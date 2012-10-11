@@ -40,8 +40,10 @@ Note: if conflicts arise from the pull, fix these in your local checkout and com
    
    test, repeat, ...
    
-5. When you are satisfied with your fix, merge back into your master branch
+5. When you are satisfied with your fix, "merge" back into your master branch
+using rebase to squash your many commits into a single commit
 
+    $ git rebase -i Issue#45
     $ git checkout master
     $ git merge Issue#45
 
@@ -51,10 +53,16 @@ Note: if conflicts arise from the pull, fix these in your local checkout and com
     
 7. Reorder your commits to occur on top of everybody else's
 
-    $ git rebase ruleml/master             
+    $ git rebase ruleml/master
     
-         
+8. Push your commits to your remote fork
+
+    $ git push origin/master
     
+9. Submit a pull request to RuleML/Test-Rebase
+
+    $ git request-pull ruleml/master
+                 
 References
 ----------
 http://git-scm.com/book/en/Git-Basics-Working-with-Remotes     
