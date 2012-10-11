@@ -65,7 +65,7 @@ pointer to the tip of that branch
     
 10. Submit a pull request to RuleML/Test-Rebase
 
-    $ git request-pull origin/master git://github.com/RuleML/Test-Rebase.git
+    $ git request-pull origin/master git://github.com/greenTara/Test-Rebase.git
                  
 References
 ----------
