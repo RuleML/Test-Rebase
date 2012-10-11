@@ -30,7 +30,7 @@ Branching to Resolve Issues
     
 3. Select an issue from the issue tracker to work on, or create a new issue.
 
-4. Create and switch to a new branch in your local repo, with name it, say, Issue#45.
+4. Create and switch to a new branch in your local repo, with name, say, Issue#45.
 
     $ git checkout -b Issue#45 
 
