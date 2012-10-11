@@ -21,6 +21,7 @@ Branching to Resolve Issues
 1. Synchronize your master branch with the ruleml remote
 
     $ git checkout master
+    
     $ git pull ruleml master
     
 2. if conflicts arise from the pull, fix these in your local checkout and commit
@@ -44,7 +45,9 @@ test, repeat, ...
 using rebase to squash your many commits into a single commit
 
     $ git rebase -i Issue#45
+    
     $ git checkout master
+    
     $ git merge Issue#45
 
 7. Update your repository's master branch from the ruleml repo
