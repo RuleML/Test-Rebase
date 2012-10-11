@@ -23,43 +23,43 @@ Branching to Resolve Issues
     $ git checkout master
     $ git pull ruleml master
     
-Note: if conflicts arise from the pull, fix these in your local checkout and commit
+2. if conflicts arise from the pull, fix these in your local checkout and commit
 
     $ git commit -a    
     
-2. Select an issue from the issue tracker to work on, or create a new issue.
+3. Select an issue from the issue tracker to work on, or create a new issue.
 
-3. Create and switch to a new branch in your local repo, with name it, say, Issue#45.
+4. Create and switch to a new branch in your local repo, with name it, say, Issue#45.
 
     $ git checkout -b Issue#45 
 
-4. Make your changes in your usual working environment (eclipse, oXygen, ...),
+5. Make your changes in your usual working environment (eclipse, oXygen, ...),
    commit frequently, using messages that are helpful to you, 
+       
+    $ git commit -a
+
+test, repeat, ...
    
-   $ git commit -a
-   
-   test, repeat, ...
-   
-5. When you are satisfied with your fix, "merge" back into your master branch
+6. When you are satisfied with your fix, "merge" back into your master branch
 using rebase to squash your many commits into a single commit
 
     $ git rebase -i Issue#45
     $ git checkout master
     $ git merge Issue#45
 
-6. Update your repository's master branch from the ruleml repo
+7. Update your repository's master branch from the ruleml repo
 
     $ git fetch ruleml
     
-7. Reorder your commits to occur on top of everybody else's
+8. Reorder your commits to occur on top of everybody else's
 
     $ git rebase ruleml/master
     
-8. Push your commits to your remote fork
+9. Push your commits to your remote fork
 
     $ git push origin/master
     
-9. Submit a pull request to RuleML/Test-Rebase
+10. Submit a pull request to RuleML/Test-Rebase
 
     $ git request-pull ruleml/master
                  
