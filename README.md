@@ -5,14 +5,14 @@ A fresh repository for testing the rebase workflow
 
 Initialization
 --------------
-1. Fork to create a public repo in your own account. I'll use my account (greenTara) for the examples. You should replace "greenTara" with your Github user name.
+1. Fork to create a public repo in your own account. I'll use my account (greenTara) for the examples. 
+You should replace "greenTara" with your Github user name.
 
 2. Clone your fork to your local computer
 
     $ git clone https://githubcom/greenTara/Test-Rebase.git
 
-
-3. Add the central (RuleML) repository as a read-only remote
+3. Add the central (RuleML) repository as a read-only remote [1]
 
     $ git remote add ruleml git://github.com/RuleML/Test-Rebase.git
 
@@ -39,7 +39,7 @@ Branching to Resolve Issues
        
     $ git commit -a
 
-test, repeat, ...
+test, repeat, ..., but do NOT push to your public for.k
    
 6. When you are satisfied with your fix, "merge" back into your master branch
 using rebase to squash your many commits into a single commit
@@ -69,5 +69,5 @@ pointer to the tip of that branch
                  
 References
 ----------
-http://git-scm.com/book/en/Git-Basics-Working-with-Remotes     
+[1]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes     
 
