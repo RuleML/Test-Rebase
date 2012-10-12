@@ -69,7 +69,5 @@ You can push new commits to your Issue#45 branch and they will automatically be 
 If your submission is accepted, the RuleML/Issue#45 branch will be merged with RuleML/master.
 It will then be propagated to all forks when Step #1 or Step #6 are executed.
                  
-References
-----------
 [1]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes     
 
