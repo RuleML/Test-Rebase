@@ -24,9 +24,8 @@ Branching to Resolve Issues
     
     $ git pull ruleml master
     
-2. if conflicts arise from the pull, fix these in your local checkout and commit
-
-    $ git commit -a    
+2. There should be no conflicts from this pull, because you have been following the
+  workflow described here and doing all your development in temporary branches.
     
 3. Select an issue from the issue tracker to work on, or create a new issue.
 
@@ -39,33 +38,37 @@ Branching to Resolve Issues
        
     $ git commit -a
 
-test, repeat, ..., but do NOT push to your public for.k
+test, repeat, ..., but do NOT push to your public fork. 
+If you add or delete files or folders, use
+
+    $ git add -A
+    
+before you commit. End with a commit.
    
-6. When you are satisfied with your fix, "merge" back into your master branch
-using rebase to squash your many commits into a single commit
-
-    $ git rebase -i master
-    
-    $ git checkout master
-    
-    $ git merge Issue#45
-
-7. Update your repository's ruleml/master branch from the ruleml repo and move the ruleml/master
-pointer to the tip of that branch
+6. When your fix is finished (or far enough along that you want some review), 
+  update your repository from the ruleml repo online. 
+  This also moves the ruleml/<branch> pointers to the new tips of those branches.
 
     $ git fetch ruleml
     
-8. Reorder your commits to occur on top of everybody else's
+7. Use rebase to reorder your commits to occur on top of everybody else's. 
+   The -i option allows you to interactively clean up your commits.
 
-    $ git rebase ruleml/master
+    $ git rebase -i ruleml/master
     
-9. Push your commits to your remote fork
+8. Push your commits to a new branch in your remote fork
 
-    $ git push origin
+    $ git push origin Issue#45
     
-10. Submit a pull request to RuleML/Test-Rebase
+9. Login to your Github account to verify that everything got uploaded OK, then
+submit a pull request to RuleML/Test-Rebase from your Github account.
+If the RuleML repo already has a branch for Issue#45, submit your pull-request to that branch,
+otherwise submit to master.
 
-    $ git request-pull ruleml/master git://github.com/greenTara/Test-Rebase.git
+10. The RuleML maintainer will make comments on your pull-request if anything needs to be changed.
+You can push new commits to your Issue#45 branch and they will automatically be added to the pull-request
+If your submission is accepted, the RuleML/Issue#45 branch will be merged with RuleML/master.
+It will then be propagated to all forks when Step #1 or Step #6 are executed.
                  
 References
 ----------
