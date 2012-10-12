@@ -65,7 +65,7 @@ If the RuleML repo already has a branch for Issue#45, submit your pull-request t
 otherwise submit to master.
 
 10. The RuleML maintainer will make comments on your pull-request if anything needs to be changed.
-You can push new commits to your Issue#45 branch and they will automatically be added to the pull-request
+You can push new commits to your Issue#45 branch and they will automatically be added to the pull-request.
 If your submission is accepted, the RuleML/Issue#45 branch will be merged with RuleML/master.
 It will then be propagated to all forks when Step #1 or Step #6 are executed.
                  
