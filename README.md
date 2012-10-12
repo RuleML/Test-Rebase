@@ -8,17 +8,17 @@ Initialization
 1. Fork to create a public repo in your own account. I'll use my account (greenTara) for the examples. 
 You should replace "greenTara" with your Github user name.
 
-2. Clone your fork to your local computer
+2. Clone your fork to your local computer.
 
     $ git clone https://githubcom/greenTara/Test-Rebase.git
 
-3. Add the central (RuleML) repository as a read-only remote [1]
+3. Add the central (RuleML) repository as a read-only remote.[1]
 
     $ git remote add ruleml git://github.com/RuleML/Test-Rebase.git
 
 Branching to Resolve Issues
 ---------------------------
-1. Synchronize your master branch with the ruleml remote
+1. Synchronize your master branch with the ruleml remote.
 
     $ git checkout master
     
@@ -55,7 +55,7 @@ Branching to Resolve Issues
 
     $ git rebase -i ruleml/master
     
-8. Push your commits to a new branch in your remote fork
+8. Push your commits to a new branch in your remote fork.
 
     $ git push origin Issue#45
     
