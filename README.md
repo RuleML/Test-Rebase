@@ -38,16 +38,15 @@ Branching to Resolve Issues
        
     $ git commit -a
 
-test, repeat, ..., but do NOT push to your public fork. 
-If you add or delete files or folders, use
+    test, repeat, ..., but do NOT push to your public fork. 
+    If you add or delete files or folders, use
 
     $ git add -A
     
-before you commit. End with a commit.
+    before you commit. End with a commit.
    
 6. When your fix is finished (or far enough along that you want some review), 
   update your repository from the ruleml repo online. 
-  This also moves the ruleml/<branch> pointers to the new tips of those branches.
 
     $ git fetch ruleml
     
