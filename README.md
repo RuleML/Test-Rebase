@@ -19,7 +19,7 @@ You should replace "greenTara" with your Github user name.
 
 Branching to Resolve Issues
 ---------------------------
-1. Switch the your master branch, if necessary.
+1. Switch to your master branch, if necessary.
 
     $ git checkout master
 
@@ -71,7 +71,8 @@ otherwise submit to master.
 anything needs to be changed.
 You can push new commits to your Issue#45 branch and they will automatically be added to the pull-request.
 If your submission is accepted, the RuleML/Issue#45 branch will be merged with RuleML/master.
-It will then be propagated to all forks when Step #2 or Step #6 are executed.
+It will then be propagated on the master branch to all forks when Step #2 or Step #6 is 
+executed by any user.
 
 [1]:http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 [2]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
