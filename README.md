@@ -30,7 +30,7 @@ Modifying the RuleML Website
 ----------------------------
 1. Update your local clone from the ruleml remote.([2])
     
-    $ git pull ruleml
+    $ git pull ruleml master
         
 2. Make your changes in your usual working environment (eclipse, oXygen, ...),
    commit frequently, using messages that are helpful to you,([4], [6]) 
