@@ -68,6 +68,26 @@ Modifying the RuleML Website
 
     $ git rebase -i ruleml/master
     
+Alternative to 3 & 4:
+If you are feeling very confident, then you could replace the fetch-rebase sequence with simply
+
+    $ git pull ruleml master
+    
+Why is this risky? If someone else has pushed to ruleml since your last pull, these changes may conflict with yours.
+Doing a fetch is a cautious way to obtain these changes without attempting a merge.
+If the fetch doesn't fetch anything, then you could push to origin without bothering with rebase
+(provided you don't care about squashing your commits.)
+
+Why is squashing with rebase a good idea? 
+The recommended practice for Git is to commit often (many times a day) and push less often
+(typically once a day, or at natural breaks). 
+If a revert is ever needed, it is easier to review one comprehensive message per push, rather than many separate
+short messages. Rebase allows you to generate such a comprehensive message by simply concatenating all the little
+commit messages.
+
+Finally, if someone did push since your last pull, the repo history will display a side loop for your
+push, rather than a linear history. A nonlinear history is more challenging to unravel.
+        
 5. Push your commits to your remote fork.([2])
 
     $ git push origin
