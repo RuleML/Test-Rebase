@@ -30,7 +30,9 @@ You should replace "greenTara" with your Github user name.
    should be performed at this point.
 
     $ git config --global user.name "Tara Athan"
+    
     $ git config --global user.email "taraathan@gmail.com"
+    
     $ git config --global push.default simple
 
 Modifying the RuleML Website
