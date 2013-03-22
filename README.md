@@ -47,7 +47,7 @@ Modifying the RuleML Website
 3. When your fix is finished (or far enough along that you want some review), 
   update your repository from the ruleml repo online.([2]) 
 
-    $ git fetch ruleml
+    $ git fetch ruleml master
 
     There may be conflicts from this pull that need to be resolved at this point.
     To avoid such conflicts, maintain communication with other contributors to avoid
