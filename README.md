@@ -3,6 +3,10 @@ Test-Rebase
 
 A fresh repository for testing the rebase workflow
 
+Prerequisites
+-------------
+1. You must have Git installed on your system. See [7].
+   
 Initialization
 --------------
 1. Fork to create a public repo in your own Github account. 
@@ -11,6 +15,7 @@ You should replace "greenTara" with your Github user name.
 
 2. Clone your fork to your local computer.([1])
 
+    $ cd path/to/directory/to/hold/this/clone  
     $ git clone https://github.com/greenTara/Test-Rebase.git
 
 3. Add the central (RuleML) repository as a read-only remote.([2])
@@ -69,3 +74,4 @@ executed by any user.
 [4]:http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository
 [5]:http://git-scm.com/book/en/Git-Branching-Rebasing
 [6]:http://git-scm.com/book/en/Getting-Started-Git-Basics
+[7]:http://git-scm.com/book/en/Getting-Started-Installing-Git
