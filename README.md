@@ -25,6 +25,15 @@ You should replace "greenTara" with your Github user name.
 3. Add the central (RuleML) repository as a read-only remote.([2])
 
     $ git remote add ruleml git://github.com/RuleML/Test-Rebase.git
+    
+4. Other configuration steps, such as providing your name and email so your commits can be identified
+   should be performed at this point.
+
+    $ git config --global user.name "Tara Athan"
+    
+    $ git config --global user.email "taraathan@gmail.com"
+    
+    $ git config --global push.default simple
 
 Modifying the RuleML Website
 ----------------------------
