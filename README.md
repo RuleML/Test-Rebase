@@ -57,7 +57,7 @@ Modifying the RuleML Website
 4. Use rebase to reorder your commits to occur on top of everybody else's. 
    The -i option allows you to interactively clean up your commits.([5])
 
-    $ git rebase -i ruleml
+    $ git rebase -i ruleml/master
     
 5. Push your commits to your remote fork.([2])
 
