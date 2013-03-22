@@ -102,6 +102,11 @@ If your submission is accepted, your commits will be add to the central RuleML/T
 It will then be propagated to all forks when Step #1 or Step #3 is 
 executed by any user.
 
+GUI Clients
+-----------
+1. Tortoise Git is capable of all of the above commands except for interactive rebase.
+   It can perform the rebase, but not the squash.
+
 [1]:http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 [2]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
 [4]:http://git-scm.com/book/en/Git-Basics-Recording-Changes-to-the-Repository
