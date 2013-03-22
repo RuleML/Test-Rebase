@@ -104,8 +104,7 @@ executed by any user.
 
 GUI Clients
 -----------
-1. Tortoise Git is capable of all of the above commands except for interactive rebase.
-   It can perform the rebase, but not the squash.
+1. Tortoise Git is capable of all of the above commands including interactive rebase.
 
 [1]:http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 [2]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
