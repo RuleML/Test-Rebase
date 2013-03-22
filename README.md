@@ -15,8 +15,12 @@ You should replace "greenTara" with your Github user name.
 
 2. Clone your fork to your local computer.([1])
 
-    $ cd path/to/directory/to/hold/this/clone  
+    $ cd path/to/directory/of/Git/repositories  
     $ git clone https://github.com/greenTara/Test-Rebase.git
+    
+3. Enter the local repository
+
+    $ cd Test-rebase
 
 3. Add the central (RuleML) repository as a read-only remote.([2])
 
