@@ -51,13 +51,13 @@ Modifying the RuleML Website
 
     $ git commit -a
     
-  d) repeat a-c, or continue to the next step.
+  d) Repeat a-c, or continue to the next step.
     
    
 3. When your fix is finished (or far enough along that you want some review), 
-  update your repository (again) from the ruleml repo online.([2])
+  update your repository (again) from the RuleML repo online.([2])
   This time, instead of using "pull" (which is a shortcut for "fetch-merge"), we will use 
-  "fetch-rebase.
+  "fetch-rebase".
   Rebase is an alternative to merge that re-writes history regarding the order and granularity of commits.
 
   a) Fetch from the central RuleML repository:
@@ -103,7 +103,7 @@ Triangular GITHUB/GIT flow:
 
 GUI Clients
 -----------
-1. Tortoise Git is capable of all of the above commands, including interactive rebase.
+1. TortoiseGit([8]) is capable of all of the above commands, including interactive rebase.
 
 [1]:http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 [2]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
@@ -111,3 +111,4 @@ GUI Clients
 [5]:http://git-scm.com/book/en/Git-Branching-Rebasing
 [6]:http://git-scm.com/book/en/Getting-Started-Git-Basics
 [7]:http://git-scm.com/book/en/Getting-Started-Installing-Git
+[8]:http://code.google.com/p/tortoisegit/
