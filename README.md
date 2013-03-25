@@ -89,6 +89,18 @@ If your pull-request is accepted, your commits will be add to the central RuleML
 They will then be propagated to other forks when Step #1 or Step #3 is 
 executed by any user. The RuleML repository will not make announcements of modifecations or create pull-requests.
 
+Diagram
+-------
+
+Triangular GITHUB/GIT flow:
+
+        pull request
+my fork ---------> central repo         GITHUB
+     ^               /
+push \             / pull(or fetch/rebase)
+         \         v
+        local clone                           GIT
+
 GUI Clients
 -----------
 1. Tortoise Git is capable of all of the above commands, including interactive rebase.
