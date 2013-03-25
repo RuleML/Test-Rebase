@@ -39,72 +39,55 @@ Modifying the RuleML Website
 ----------------------------
 1. Update your local clone from the ruleml remote.([2])
 
-
     $ git pull ruleml master
         
-2. Make your changes in your usual working environment (eclipse, oXygen, ...),
-   commit frequently, using messages that are helpful to you,([4], [6])
-
-
-    $ git commit -a
-
-    test, repeat, ..., but do NOT push to your public fork. 
-    If you add or delete files or folders, use
+2. Modify your local clone:
+a) Make your changes in your usual working environment (plain text eclipse, oXygen, ...), and test your modifications
+b) Optional: If you add or delete files or folders, use
 
     $ git add -A
+
+c) Commit frequently, using messages that are helpful to you,([4], [6])
+
+    $ git commit -a
     
-    before you commit. End with a commit.
+d) repeat a-c, or continue to the next step.
+    
    
 3. When your fix is finished (or far enough along that you want some review), 
-  update your repository from the ruleml repo online.([2]) 
+  update your repository (again) from the ruleml repo online.([2])
+  This time, instead of using "pull" (which is a shortcut for "fetch-merge"), we will use 
+  "fetch-rebase.
+  Rebase is an alternative to merge that re-writes history regarding the order and granularity of commits.
 
+a) Fetch from the central RuleML repository:
+  
     $ git fetch ruleml master
-
-    There may be conflicts from this pull that need to be resolved at this point.
-    To avoid such conflicts, maintain communication with other contributors to avoid
-    simultaneously modifying the same portion of the website.
-    The github issue-tracker can be used for this purpose.
-
-4. Use rebase to reorder your commits to occur on top of everybody else's. 
-   The -i option allows you to interactively clean up your commits.([5])
-
-    $ git rebase -i ruleml/master
     
+b) If nothing was fetched, and you made only one or a few commits, you may continue with step 4.
+   Otherwise, rebase interactively:
+   
+    $ git rebase -i ruleml/master
+
+c) There may be conflicts from this fetch-rebase that need to be resolved at this point.
+To avoid such conflicts, maintain communication with other contributors to avoid
+simultaneously modifying the same portion of the website.
+The github issue-tracker can be used for this purpose.
         
-5. Push your commits to your remote fork.([2])
+4. Push your commits to your remote fork.([2])
 
     $ git push origin
     
-6. Login to your Github account to verify that everything got uploaded OK, then
-submit a pull request to RuleML/Test-Rebase from your Github account.
+5. Login to your Github account and perform the following:
+a) verify that everything got uploaded OK
+b) submit a pull request to RuleML/Test-Rebase from your Github account.
 
-7. The RuleML maintainer and/or other developers will make comments on your pull-request if 
+6. The RuleML maintainer and/or other developers will make comments on your pull-request if 
 anything needs to be changed.
-You can push new commit to your local fork and they will automatically be added to the pull-request.
-If your submission is accepted, your commits will be add to the central RuleML/Text-rebase repository.
-It will then be propagated to all forks when Step #1 or Step #3 is 
-executed by any user.
-
-Alternative to 3 & 4:
-If you are feeling very confident, then you could replace the fetch-rebase sequence with simply
-
-    $ git pull ruleml master
-    
-Why is this risky? If someone else has pushed to ruleml since your last pull, these changes may conflict with yours.
-Doing a fetch is a cautious way to obtain these changes without attempting a merge.
-If the fetch doesn't fetch anything, then you could push to origin without bothering with rebase
-(provided you don't care about squashing your commits.)
-
-Why is squashing with rebase a good idea? 
-The recommended practice for Git is to commit often (many times a day) and push less often
-(typically once a day, or at natural breaks). 
-If a revert is ever needed, it is easier to review one comprehensive message per push, rather than many separate
-short messages. Rebase allows you to generate such a comprehensive message by simply concatenating all the little
-commit messages.
-
-Finally, if someone did push since your last pull, the repo history will display a side loop for your
-push, rather than a linear history. A nonlinear history is more challenging to unravel.
-
+You can push new commits to your local fork and they will automatically be added to the pull-request.
+If your pull-request is accepted, your commits will be add to the central RuleML/Text-rebase repository.
+They will then be propagated to other forks when Step #1 or Step #3 is 
+executed by any user. The RuleML repository will not make announcements of modifecations or create pull-requests.
 
 GUI Clients
 -----------
