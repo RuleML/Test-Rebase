@@ -38,12 +38,14 @@ You should replace "greenTara" with your Github user name.
 Modifying the RuleML Website
 ----------------------------
 1. Update your local clone from the ruleml remote.([2])
-    
+
+
     $ git pull ruleml master
         
 2. Make your changes in your usual working environment (eclipse, oXygen, ...),
-   commit frequently, using messages that are helpful to you,([4], [6]) 
-       
+   commit frequently, using messages that are helpful to you,([4], [6])
+
+
     $ git commit -a
 
     test, repeat, ..., but do NOT push to your public fork. 
@@ -68,6 +70,21 @@ Modifying the RuleML Website
 
     $ git rebase -i ruleml/master
     
+        
+5. Push your commits to your remote fork.([2])
+
+    $ git push origin
+    
+6. Login to your Github account to verify that everything got uploaded OK, then
+submit a pull request to RuleML/Test-Rebase from your Github account.
+
+7. The RuleML maintainer and/or other developers will make comments on your pull-request if 
+anything needs to be changed.
+You can push new commit to your local fork and they will automatically be added to the pull-request.
+If your submission is accepted, your commits will be add to the central RuleML/Text-rebase repository.
+It will then be propagated to all forks when Step #1 or Step #3 is 
+executed by any user.
+
 Alternative to 3 & 4:
 If you are feeling very confident, then you could replace the fetch-rebase sequence with simply
 
@@ -87,24 +104,11 @@ commit messages.
 
 Finally, if someone did push since your last pull, the repo history will display a side loop for your
 push, rather than a linear history. A nonlinear history is more challenging to unravel.
-        
-5. Push your commits to your remote fork.([2])
 
-    $ git push origin
-    
-6. Login to your Github account to verify that everything got uploaded OK, then
-submit a pull request to RuleML/Test-Rebase from your Github account.
-
-7. The RuleML maintainer and/or other developers will make comments on your pull-request if 
-anything needs to be changed.
-You can push new commit to your local fork and they will automatically be added to the pull-request.
-If your submission is accepted, your commits will be add to the central RuleML/Text-rebase repository.
-It will then be propagated to all forks when Step #1 or Step #3 is 
-executed by any user.
 
 GUI Clients
 -----------
-1. Tortoise Git is capable of all of the above commands including interactive rebase.
+1. Tortoise Git is capable of all of the above commands, including interactive rebase.
 
 [1]:http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository
 [2]:http://git-scm.com/book/en/Git-Basics-Working-with-Remotes
