@@ -41,17 +41,17 @@ Modifying the RuleML Website
 
     $ git pull ruleml master
         
-2. Modify your local clone:
-a) Make your changes in your usual working environment (plain text eclipse, oXygen, ...), and test your modifications
-b) Optional: If you add or delete files or folders, use
+2. Modify your local clone:  
+  a) Make your changes in your usual working environment (plain text eclipse, oXygen, ...), and test your modifications  
+  b) Optional: If you add or delete files or folders, use  
 
     $ git add -A
 
-c) Commit frequently, using messages that are helpful to you,([4], [6])
+  c) Commit frequently, using messages that are helpful to you,([4], [6])  
 
     $ git commit -a
     
-d) repeat a-c, or continue to the next step.
+  d) repeat a-c, or continue to the next step.
     
    
 3. When your fix is finished (or far enough along that you want some review), 
@@ -60,16 +60,16 @@ d) repeat a-c, or continue to the next step.
   "fetch-rebase.
   Rebase is an alternative to merge that re-writes history regarding the order and granularity of commits.
 
-a) Fetch from the central RuleML repository:
+  a) Fetch from the central RuleML repository:
   
     $ git fetch ruleml master
     
-b) If nothing was fetched, and you made only one or a few commits, you may continue with step 4.
+  b) If nothing was fetched, and you made only one or a few commits, you may continue with step 4.
    Otherwise, rebase interactively:
    
     $ git rebase -i ruleml/master
 
-c) There may be conflicts from this fetch-rebase that need to be resolved at this point.
+  c) There may be conflicts from this fetch-rebase that need to be resolved at this point.
 To avoid such conflicts, maintain communication with other contributors to avoid
 simultaneously modifying the same portion of the website.
 The github issue-tracker can be used for this purpose.
@@ -78,9 +78,9 @@ The github issue-tracker can be used for this purpose.
 
     $ git push origin
     
-5. Login to your Github account and perform the following:
-a) verify that everything got uploaded OK
-b) submit a pull request to RuleML/Test-Rebase from your Github account.
+5. Login to your Github account and perform the following:  
+  a) verify that everything got uploaded OK  
+  b) submit a pull request to RuleML/Test-Rebase from your Github account.  
 
 6. The RuleML maintainer and/or other developers will make comments on your pull-request if 
 anything needs to be changed.
