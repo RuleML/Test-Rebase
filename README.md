@@ -94,12 +94,12 @@ Diagram
 
 Triangular GITHUB/GIT flow:
 
-        pull request
-my fork ---------> central repo         GITHUB
-     ^               /
-push \             / pull(or fetch/rebase)
-         \         v
-        local clone                           GIT
+            pull request
+    my fork ---------> central repo         GITHUB
+         ^               /
+    push \             / pull(or fetch/rebase)
+             \         v
+            local clone                           GIT
 
 GUI Clients
 -----------
