@@ -65,7 +65,7 @@ Modifying the RuleML Website
     $ git fetch ruleml master
     
   b) If nothing was fetched, and you made only one or a few commits, you may continue with step 4.
-   Otherwise, rebase interactively:
+   Otherwise, rebase* interactively:
    
     $ git rebase -i ruleml/master
 
@@ -87,7 +87,9 @@ anything needs to be changed.
 You can push new commits to your local fork and they will automatically be added to the pull-request.
 If your pull-request is accepted, your commits will be add to the central RuleML/Text-rebase repository.
 They will then be propagated to other forks when Step #1 or Step #3 is 
-executed by any user. The RuleML repository will not make announcements of modifecations or create pull-requests.
+executed by any user. The RuleML repository will not make announcements of modifications or create pull-requests.
+
+*Note: you should not execute the rebase command again until these commits have been accepted into the central repository.
 
 Diagram
 -------
