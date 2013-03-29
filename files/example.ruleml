@@ -28,8 +28,8 @@
       <op>
         <Rel iri="some_URI">another relation</Rel>
       </op>
-      <Ind>constant c</Ind>
-      <Ind>constant d</Ind>
+      <Ind>constant cesar</Ind>
+      <Ind>constant django</Ind>
     </Atom>
   </Query>
   
